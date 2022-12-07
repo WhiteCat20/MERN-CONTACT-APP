@@ -1,0 +1,29 @@
+GET http://localhost:5000/contacts
+
+###
+GET http://localhost:5000/contacts/6388579f77c0f360a45d6c71
+
+
+###
+POST http://localhost:5000/contacts
+Content-Type: application/json
+
+{
+ "name": "Usopp", 
+ "email": "mynoseaintlong@gmail.com",
+ "address" : "East Blue"
+}
+
+###
+PATCH http://localhost:5000/contacts/6388579f77c0f360a45d6c71
+Content-Type: application/json
+
+{
+ "name": "Monkey D. Luffy", 
+ "email": "pirateking@gmail.com",
+ "address" : "East Blue"
+}
+
+
+###
+DELETE http://localhost:5000/contacts/6388575677c0f360a45d6c6d
